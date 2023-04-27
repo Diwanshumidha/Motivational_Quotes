@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+}
+.container {
+  width: 500px ;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: hsl(229, 30%, 28%);
+  border-radius: 2rem;
+  box-shadow: 5px 5px 0 0 hsl(248, 46%, 30%), 10px 10px 0 0 hsla(248, 46%, 30%, 0.6), 15px 15px 0 0 hsla(248, 46%, 30%, 0.4), 20px 20px 0 0 hsla(248, 46%, 30%, 0.2), 25px 25px 0 0 hsla(248, 46%, 30%, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.container > div.quote_icon {
+  width: 100%;
+  height: 3rem;
+}
+
+div.container > div.main_content {
+  width: 85%;
+  height: calc(100% - 3rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: antiquewhite;
+}
+div.main_content > span {
+  font-size: x-large;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+}
+div.main_content > .generate_btn {
+  width: max-content;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: antiquewhite;
+  background-color: transparent;
+  box-shadow: none;
+  border: white solid 2px;
+  border-radius: 1rem;
+  transition: 0.5s;
+  font-family: 'Lobster', cursive;
+  cursor: pointer;
+
+}
+
+div.main_content > .generate_btn:hover {
+  
+  background-color: aliceblue;
+  color: #483d8b;
+}
+div.quote_icon > img{
+  height:60% ;
+  margin-left: 2rem;
+}
+
+/* For small Tablet & mobiles  */
+@media only screen and (max-width: 800px) {
+  .container{
+    width: 70vw;
+  }
+}
